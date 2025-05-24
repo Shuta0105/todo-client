@@ -36,7 +36,7 @@ const Todo = ({ todo }: TodoProps) => {
     }
   };
 
-  const handleDelete = async (id: Number) => {
+  const handleDelete = async (id: number) => {
     const response = await fetch(
       `${API_URL}/deleteTodo/${todo.id}`,
       {
