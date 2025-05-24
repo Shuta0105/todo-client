@@ -9,7 +9,7 @@ import { API_URL } from "@/constants/url";
 export default function Home() {
   //const allTodos = await fetch("API", {cache: "no-store"}); SSR   "force-cache" SSG
   const inputRef = useRef<HTMLInputElement | null>(null);
-  const { todos, isLoading, error, mutate } = useTodos();
+  const { todos, mutate } = useTodos();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
